@@ -1,0 +1,80 @@
+https://code.visualstudio.com/ > Install
+https://nodejs.org/en > Install
+https://github.com/ > Signup
+https://git-scm.com/downloads > Install
+https://github.com/Aakashdeveloper > Follow
+https://www.mongodb.com/try/download/community > download
+
+JavaScript
+Ifelse,Function,object,JSON,Variables
+
+
+NPM
+Basic NodeJS(in built)(Os,file,http)
+NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+Third Party Api (Weather Api)
+Redis  > 6379
+Node-Es6(.babel)
+Email With Node(nodemailer)
+MongoDb Basic >27017  (local/cloud)
+Api with NodeJS(Rest)>1
+Swagger
+Testing
+DashBoard(Crud)
+Github
+--Deployment of app---
+Heroku
+Pm2
+Docker
+Nginx
+Login/Logout(JWT)
+GraphQl API
+Chatapp
+ImageUpload
+NodeJs with postgres
+
+
+
+
+////package.json
+> this is entry point to the app
+> meta data(like version, description)
+> script(start,test)
+> packages
+
+//step to generate package.json
+> go inside the folder using cmd/terminal
+> type npm init
+> Answer all question
+> type yes
+
+
+node 6000 //20july
+
+//step to install package (local)
+> go inside the folder using cmd/terminal
+> npm install packagename / npm i packagename
+
+~ support patch
+2.8.5 , 2.8.20....
+not accept 2.9.0
+
+^support minor
+2.8.9,2.9.10....... 
+not support 3.0.0
+
+
+package-lock > dependecy tree
+
+//////install global package
+# window
+> open cmd as admin
+> npm i -g nodemon
+
+# mac/linux
+> open terminal
+> sudo npm i -g nodemon
+
+
+json > javascript object notation
+(key - value) pair of data
