@@ -1,0 +1,28 @@
+download > https://www.mongodb.com/products/self-managed/community-edition
+# download and  install
+# go inside c drive and make folder by the name of data
+# inside data make by name of db
+C:\data\db
+
+> open cmd and start server (27017)
+> go inside C:\ProgrammFile\mongodb\bin
+> mongod
+* Do not close this cmd
+
+# Start client fot working
+> open new cmd
+> go inside C:\ProgrammFile\mongodb\bin
+> mongosh
+
+# mac linux
+download > https://www.mongodb.com/products/self-managed/community-edition
+# download and  install
+open terminal at root 
+mkdir /data/db
+
+> open terminal and start server (27017)
+> mongod
+* Do not close this terminal
+
+> open new terminal and
+> mongosh
