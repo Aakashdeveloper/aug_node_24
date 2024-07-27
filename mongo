@@ -26,3 +26,76 @@ mkdir /data/db
 
 > open new terminal and
 > mongosh
+
+
+Mongodb> NoSql Database
+
+Roll No | Hindi | English | Computer
+   1    |  80   |         |
+   2    |       |   70    |
+   3    |  75   |         |    80
+[
+ {
+     "rollNo":1,
+     "Hindi":80
+ },
+ {
+     "rollNo":2,
+     "English":70
+ },
+ {
+     "rollNo":3,
+     "Hindi":75,
+     "Computer":80
+ }
+]
+
+SQL         Mongo
+Database    Database
+Table       Collection
+Row         Document
+Select      Find
+Insert      Insert
+Delete      Delete
+Update      update
+
+// Default Port
+> 27017
+
+
+//mongod --config /usr/local/etc/mongod.conf --fork
+
+//see all dbs
+show dbs
+
+//go inside db
+use databasename
+
+// see all the collections
+show collections
+
+//find all the data
+db.collectionName.find()
+
+//create new database
+use databasename
+
+_id > Primary key
+default is 12 byte
+we can also add our own
+
+db.user.insert({"name":"Sarah"})
+
+db.user.insert({"_id":1,"name":"Nikita"})
+db.user.insert({"_id":1,"name":"Lucky"})
+
+4 byte> Timestamp
+5 byte> Random value
+3 byte> Counter
+
+
+// find with condition
+db.products.find({"category":"Electronics"})
+db.products.find({"category":"Electronics","company":"Bajaj"})
+
+param

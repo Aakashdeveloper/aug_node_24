@@ -15,8 +15,8 @@ Ifelse,Function,object,JSON,Variables
 
 NPM
 Basic NodeJS(in built)(Os,file,http)
-/////////////////////////
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
+/////////////////////////
 Third Party Api (Weather Api)
 Redis  > 6379
 Node-Es6(.babel)
@@ -91,3 +91,16 @@ R > Read   GET
 U > Update PUT
 D > Delete DELETE
 
+
+Params
+> Send in url after /
+> Need to declare in the route
+> Use to small data
+> Once declare in the route it is complusory to pass
+
+
+QueryParams
+> Send in url after ?
+> No Need to declare
+> use to pass multiple data
+> Not complusory to pass
