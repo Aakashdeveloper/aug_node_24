@@ -16,27 +16,27 @@ Ifelse,Function,object,JSON,Variables
 NPM
 Basic NodeJS(in built)(Os,file,http)
 NodeJS(full Stack App) (Node-EJS-Mongo-Express)
-/////////////////////////
 Third Party Api (Weather Api)
-Redis  > 6379
 Node-Es6(.babel)
 Email With Node(nodemailer)
+Redis  > 6379
+ImageUpload
+/////////////////////////
 MongoDb Basic >27017  (local/cloud)
-
 Api with NodeJS(Rest)>1
 Swagger
 Testing
-DashBoard(Crud)
 Github
 --Deployment of app---
-Heroku
+render
 Pm2
 Docker
 Nginx
+
+DashBoard(crud)
 Login/Logout(JWT)
 GraphQl API
 Chatapp
-ImageUpload
 NodeJs with postgres
 
 
@@ -104,3 +104,17 @@ QueryParams
 > No Need to declare
 > use to pass multiple data
 > Not complusory to pass
+
+
+
+///redis
+KEYS *
+set key value
+get key
+del key
+FLUSHALL
+
+
+
+
+

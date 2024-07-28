@@ -1,5 +1,7 @@
-let express = require('express');
-let request = require('request');
+//let express = require('express');
+// let request = require('request');
+import express from 'express';
+import request from 'request';
 let port = 7662;
 let app = express();
 
