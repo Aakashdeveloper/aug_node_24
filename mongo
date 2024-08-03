@@ -102,3 +102,97 @@ param
 
 
 https://cloud.mongodb.com/
+
+
+///projection
+db.restaurants.find({condition},{projection})
+ 
+
+db.restaurants.find({},{restaurant_name:1,address:1})
+db.restaurants.find({},{restaurant_name:1,address:1,_id:0})
+db.restaurants.find({state_id:1},{restaurant_name:1,address:1,_id:0})
+
+db.restaurants.find({},{restaurant_name:1,address:1,_id:0}).sort({restaurant_name:1})
+
+db.restaurants.find({},{restaurant_name:1,address:1,_id:0}).sort({restaurant_name:-1}).skip(6).limit(3)
+
+
+db.restaurants.find({"mealTypes.mealtype_id":1})
+db.restaurants.find({cost:{$gt:900}},{restaurant_name:1,cost:1})
+
+db.restaurants.find({cost:{$gt:600,$lt:1000}},{restaurant_name:1,cost:1})
+
+
+db.restaurants.find({
+    $and:[
+       {"mealTypes.mealtype_id":1},
+       {"cuisines.cuisine_id":1}
+    ]
+},{restaurant_name:1,mealTypes:1,cuisines:1})
+
+
+
+db.restaurants.find({
+    $or:[
+       {"mealTypes.mealtype_id":1},
+       {"cuisines.cuisine_id":1}
+    ]
+},{restaurant_name:1,mealTypes:1,cuisines:1})
+
+///update
+db.users.updateOne({condition},{$set:value})
+
+db.users.updateOne(
+    {name:'Nidhi'},
+    {
+        $set:{
+            phone:9876543211,
+            age:20
+        }
+    }
+)
+
+db.users.updateOne(
+    {name:'Nidhi'},
+    {
+        $unset:{
+            age:1
+        }
+    }
+)
+
+
+db.users.updateOne(
+    {_id:ObjectId('65479b8988fcbaea21c8517f')},
+    {
+        $set:{
+            phone:9876543211,
+            age:20
+        }
+    }
+)
+
+
+
+
+db.users.updateOne(
+    {name:"Manvi"},
+    {
+        $set:{
+            phone:8876543211,
+            age:10
+        }
+    },
+    {upsert:true},
+    {multi:true}
+)
+
+//delete
+//remove all data
+db.users.remove({})
+
+//remove particular records
+db.users.remove({condition})
+
+db.users.remove({name:"Test"})
+db.users.deleteOne({name:"Test2"})
