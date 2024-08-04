@@ -1,0 +1,173 @@
+{
+    "openapi":"3.0.0",
+    "info":{
+        "description":"This is the api for users"
+    },
+    "tags":[
+        {
+            "name":"PUBLIC ROUTE",
+            "description":"Public Route"
+        }
+    ],
+    "paths":{
+        "/":{
+            "summary":"Testing Health Check Route",
+            "get":{
+                "description":"Use Health Check",
+                "tags":["PUBLIC ROUTE"],
+                "responses":{
+                    "200":{
+                        "description":"User Health Pass"
+                    }
+                }
+            }
+        },
+        "/location":{
+            "summary":"Testing location Check Route",
+            "get":{
+                "description":"Use location Check",
+                "tags":["PUBLIC ROUTE"],
+                "parameters":[
+                    {
+                        "name": "x-auth-token",
+                        "in":"header",
+                        "required":true
+                    }
+                   
+                ],
+                 
+                "responses":{
+                    "200":{
+                        "description":"User location Pass"
+                    }
+                }
+            }
+        },
+        "/details":{
+            "summary":"Testing location Check Route",
+            "get":{
+                "description":"Use location Check",
+                "tags":["PUBLIC ROUTE"],
+                "parameters":[
+                    {
+                        "name": "id",
+                        "in":"path",
+                        "required":true
+                    }
+                   
+                ],
+                 
+                "responses":{
+                    "200":{
+                        "description":"User location Pass"
+                    }
+                }
+            }
+        },
+        "/placeOrder":{
+            "summary":"Testing location Check Route",
+            "post":{
+                "description":"Use location Check",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "name": "Rohit",
+                                "email": "rohit@gmail.com",
+                                "address": "Hom 65",
+                                "phone": 8934645457,
+                                "cost": 931,
+                                "menuItem": [
+                                    9,4,5
+                                ],
+                                "status": "Pending"
+                            }
+                        }
+                    }
+                },
+                 
+                "responses":{
+                    "200":{
+                        "description":"User location Pass"
+                    }
+                }
+            }
+        },
+        "/updateOrder":{
+            "summary":"Testing location Check Route",
+            "put":{
+                "description":"Use location Check",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "name": "Rohit",
+                                "email": "rohit@gmail.com",
+                                "address": "Hom 65",
+                                "phone": 8934645457,
+                                "cost": 931,
+                                "menuItem": [
+                                    9,4,5
+                                ],
+                                "status": "Pending"
+                            }
+                        }
+                    }
+                },
+                 
+                "responses":{
+                    "200":{
+                        "description":"User location Pass"
+                    }
+                }
+            }
+        },
+        "/deleteOrder":{
+            "summary":"Testing location Check Route",
+            "delete":{
+                "description":"Use location Check",
+                "tags":["PUBLIC ROUTE"],
+                "requestBody":{
+                    "required":true,
+                    "content":{
+                        "application/json":{
+                            "schema":{
+                                "type":"object",
+                                "id":"string"
+                            },
+                            "example":{
+                                "name": "Rohit",
+                                "email": "rohit@gmail.com",
+                                "address": "Hom 65",
+                                "phone": 8934645457,
+                                "cost": 931,
+                                "menuItem": [
+                                    9,4,5
+                                ],
+                                "status": "Pending"
+                            }
+                        }
+                    }
+                },
+                 
+                "responses":{
+                    "200":{
+                        "description":"User location Pass"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -22,11 +22,12 @@ Email With Node(nodemailer)
 Redis  > 6379
 ImageUpload
 MongoDb Basic >27017  (local/cloud)
-/////////////////////////
-
 Api with NodeJS(Rest)>1
 Swagger
+/////////////////////////
 Testing
+Login/Logout(JWT)
+
 Github
 --Deployment of app---
 render
@@ -34,15 +35,10 @@ Pm2
 Docker
 Nginx
 
-DashBoard(crud)
-Login/Logout(JWT)
+
+
 GraphQl API
-Chatapp
 NodeJs with postgres
-
-
-
-
 ////package.json
 > this is entry point to the app
 > meta data(like version, description)
