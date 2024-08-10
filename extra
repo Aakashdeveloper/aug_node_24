@@ -24,10 +24,9 @@ ImageUpload
 MongoDb Basic >27017  (local/cloud)
 Api with NodeJS(Rest)>1
 Swagger
-/////////////////////////
 Testing
 Login/Logout(JWT)
-
+/////////////////////////
 Github
 --Deployment of app---
 render
@@ -35,10 +34,9 @@ Pm2
 Docker
 Nginx
 
-
-
 GraphQl API
 NodeJs with postgres
+
 ////package.json
 > this is entry point to the app
 > meta data(like version, description)
@@ -112,6 +110,4 @@ del key
 FLUSHALL
 
 
-
-
-
+https://www.postgresql.org/download/windows/
