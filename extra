@@ -26,16 +26,18 @@ Api with NodeJS(Rest)>1
 Swagger
 Testing
 Login/Logout(JWT)
-/////////////////////////
+GraphQl API
+NodeJs with postgres
 Github
 --Deployment of app---
 render
 Pm2
+/////////////////////////
+
 Docker
 Nginx
 
-GraphQl API
-NodeJs with postgres
+
 
 ////package.json
 > this is entry point to the app
@@ -111,3 +113,29 @@ FLUSHALL
 
 
 https://www.postgresql.org/download/windows/
+
+//postgres
+> pg_ctl -D /usr/local/var/postgres start
+> pg_ctl -D /usr/local/var/postgres stop
+
+
+//dummy api
+json-server
+> json-server --watch db.json --port 9123
+
+
+https://dashboard.render.com/
+
+
+npm i -g pm2
+pm2 start filename
+pm2 stop
+pm2 status
+
+pm2 start filename -i processNumber
+
+
+docker build . -t imagename
+docker run -p 7662:8000 imagename
+
+https://github.com/Aakashdeveloper/Node-Interview-Question
