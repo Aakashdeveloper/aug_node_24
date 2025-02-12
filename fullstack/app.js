@@ -1,6 +1,6 @@
 let express = require('express');
 let app = express();
-let port = 9120;
+let port = 9121;
 let {dbConnect} = require('./src/controller/dbController')
 
 
